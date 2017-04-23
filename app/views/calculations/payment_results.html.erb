@@ -1,0 +1,31 @@
+<h1>
+  Payment Results
+</h1>
+
+<h5>
+  APR
+</h5>
+<p>
+  <%= number_with_precision(@int, :precision => 4) %>%
+</p>
+
+<h5>
+  Number of years
+</h5>
+<p>
+  <%= @yr %>
+</p>
+
+<h5>
+  Principal
+</h5>
+<p>
+  $<%= number_with_precision(@prin, :precision => 2, :delimiter => ',') %>
+</p>
+
+<h5>
+  Payment
+</h5>
+<p>
+  $<%= number_with_precision(@monthly_payment, :precision => 2, :delimiter => ',') %>
+</p>

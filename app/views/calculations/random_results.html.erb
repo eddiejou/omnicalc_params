@@ -1,0 +1,30 @@
+<h1>
+  Random Results
+</h1>
+
+<h5>
+  Minimum
+</h5>
+<p>
+  <%= @num_1 %>
+</p>
+
+<h5>
+  Maximum
+</h5>
+<p>
+  <%= @num_2  %>
+</p>
+
+<h5>
+  Random Number
+</h5>
+<p>
+  <%= number_with_precision(@rand_num, strip_insignificant_zeros: true, :precision => 4) %>
+</p>
+
+<p>
+  <a href="/random/results?num_1=<%= @num_1 %>&num_2=<%= @num_2 %>">
+    Recalculate
+  </a>
+</p>
